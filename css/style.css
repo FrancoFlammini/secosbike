@@ -38,7 +38,7 @@ body{
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
-    background-color: yellow;
+    background-color: rgb(0, 183, 255);
 }
 
 .banner-container {
@@ -107,10 +107,15 @@ body{
 .card button:hover {
     opacity: 0.7;
 }
-
-
 /*modal content*/
 
+.modal-content {
+    width: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: wrap;
+    
+}
 .modal-container {
     width: 80%;
     margin: 0 10%;
@@ -151,6 +156,8 @@ body{
     align-items: center;
     width: 70%;
     margin: 10px;
+    cursor: pointer;
+    
 }
 
 .modal-container > div > img {
@@ -163,8 +170,29 @@ body{
     padding: 20px;
     text-align: center;
     padding-top: 20px;
+    /* cursor: pointer; */
 }
 
+.btn-primary{
+    background-color: white;
+    border-color: red;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: red;
+    border-color: rgb(255, 255, 255);
+}
+
+#carritoComprar{
+    z-index: 10;
+}
 /* delete button product */
 
 .delete-product {
